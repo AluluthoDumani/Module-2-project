@@ -4,6 +4,7 @@ import payrollRoutes from './routes/payrollRoutes.js'
 import attendeRoutes from './routes/attendeRoutes.js'
 import leaveRoutes from './routes/leaveRoutes.js'
 import departmentRoutes from './routes/departmentRoutes.js'
+import usersRoutes from './routes/usersRoutes.js'
 import cors from 'cors'
 import { config } from 'dotenv'
 config()
@@ -21,6 +22,7 @@ app.use('/payroll',payrollRoutes)
 app.use('/attendee',attendeRoutes)
 app.use('/leave', leaveRoutes)
 app.use('/department', departmentRoutes)
+app.use('/users', usersRoutes)
 
 
 

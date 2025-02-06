@@ -10,7 +10,7 @@ const getSinglePayroll = async (payroll_id)=>{
     return data
 }
 
-console.log(await getSinglePayroll(1000))
+
  
  const insertPayroll = async (payroll_id,employee_id,hours_worked,leave_deduction,final_salary,perfomance) => {
      await pool.query('INSERT INTO payroll_table (payroll_id,employee_id,hours_worked,leave_deduction,final_salary,perfomance) VALUES (?, ?, ?, ?,?,?)',[payroll_id,employee_id,hours_worked,leave_deduction,final_salary,perfomance])
