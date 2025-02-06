@@ -1,6 +1,6 @@
 import {getAttendees,getSingleAttendee, insertAttendee,deleteAttendee, updateAttendee} from '../model/attendenceModel.js'
 const getAttendeesCon = async(req,res)=>{
-    res.json({Attendees: await getAttendees()})
+    res.json({attendance: await getAttendees()})
 }
 
 export {getAttendeesCon, insertAttendeeCon, getSingleAttendeeCon,deleteAttendeeCon, updateAttendeeCon}
