@@ -7,8 +7,8 @@ const router = express.Router()
 router.get('/', getUsersCon )
 router.get ('/:contact',getSingleUserCon )
 router.post('/',insertUsersCon )
-router.delete('/:contact',deleteUsersCon )
-router.patch('/:contact', updateUsersCon)
+router.delete('/:contact', deleteUsersCon);
+router.patch('/:contact', updateUsersCon);
 
 
 
