@@ -8,7 +8,7 @@ router.get('/', getEmployeesCon )
 router.get ('/:employee_id',getSingleEmployeeCon )
 router.post('/',insertEmployeeCon )
 router.delete('/:employee_id', deleteEmployeeCon);
-router.put('/:employee_id', updateEmployeeCon)
+router.patch('/:employee_id', updateEmployeeCon)
 
 
 

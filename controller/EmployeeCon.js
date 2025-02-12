@@ -39,7 +39,6 @@ const deleteEmployeeCon = async (req, res) => {
     }
 };
 
-// This only updates name,position and department id 
 const updateEmployeeCon = async (req, res) => {
     try {
       let { employee_id, name, position, department_id, employment_history, contact } = req.body;
